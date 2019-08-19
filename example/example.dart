@@ -45,14 +45,15 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      // Add the gradient navigation bar here
       bottomNavigationBar: GradientNavigationBar(
         backgroundColor: backgroundColor,
         gradient: gradient,
-        currentIndex: _selectedIndex,
+        currentIndex: _selectedIndex, 
         iconColor: Colors.grey,
         labelColor: Colors.grey,
         selectedIconColor: Colors.white,
-        onTap: _selectIndex,
+        onTap: _selectIndex, // calls a void method to change the index on tap of the item
         showLabel: true,
         items: [
           TabInfo(
